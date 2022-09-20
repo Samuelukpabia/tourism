@@ -1,0 +1,226 @@
+
+.destination{
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.container{
+    padding-top: 10%;
+    margin: 0rem 7vw;
+ }
+ 
+ .container .text{
+     display: flex;
+     align-items: center;
+     font-weight: bolder;
+ 
+ }
+ .container .text span{
+     color: rgb(124, 122, 122);
+  margin-right: 1rem;
+ }
+
+ .dataContainer{
+    margin-top: 30px ;
+    display: flex;
+    width: 100%;
+ }
+
+ .img-container, .data{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .img-container img{
+    width: 65%;
+ }
+
+
+ .data-info{
+    width: 75%;
+ }
+ .data-info h1{
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+ }
+ .data-info p{
+   line-height: 1.5rem;
+   color: #d0d6f9;
+
+ }
+ .line{
+   height: 1px;
+   width: 100%;
+   background-color: rgba(240, 248, 255, 0.144);
+   margin-bottom: 1rem;
+}
+ .aveEst{
+    display: flex;
+    width: 70%;
+   
+ }
+ .aveEst div{
+   margin-right: 1.5rem;
+
+ }
+ .aveEst div h3{
+   margin: 0;
+   padding: 0;
+   font-size: 0.9rem;
+ }
+ .aveEst div h6{
+   margin: 0;
+   padding: 0;
+   font-size: 0.5rem;
+   color: #d0d6f9;
+
+ }
+
+
+ .title-btn{
+    background-color: transparent;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color: #d0d6f9;
+    border: none;
+    padding: 0;
+    padding-bottom: 3px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+ }
+ .title-btn:hover{
+   color: rgba(255, 255, 255, 0.836);
+   border-bottom: 2px solid #d0d6f9;
+
+ }
+
+ .active-btn {
+    color: white;
+    border-bottom: 2px solid white;
+ }
+
+
+ 
+ @media only screen and (max-width: 850px){
+
+      .dataContainer{
+         margin-top: 50px;
+         display: flex;
+         flex-direction: column;
+      }
+
+      .img-container img{
+         width: 55%;
+      }
+      .data-info{
+         width: 90%;
+         text-align: center;
+         padding-top: 60px;
+      }
+      .data-info h1{
+         padding-top: 2rem;
+      }
+      .data-info p{
+        line-height: 2rem;
+      }
+      .title-btn{
+         font-size: 1rem;
+         margin-right: 1rem;
+      }
+      .aveEst-container{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+      }
+      .aveEst{
+         justify-content: space-around;
+         align-items: center;
+         width: 70%;
+        
+      }
+      .aveEst div{
+        margin-right: 0;
+     
+      }
+      .aveEst div h3{
+        font-size: 1.6rem;
+      }
+      .aveEst div h6{ 
+        padding: 10px 0px;
+        font-size: 0.8rem;
+     
+      }
+     
+      
+   } 
+
+
+ @media only screen and (max-width: 450px){
+     .container{
+         padding-top: 20%;
+
+      }
+      .container .text{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     .dataContainer{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+   }
+   .data-info{
+      padding-top: 30px;
+   }
+   .data-info h1{
+      padding-top: 0rem;
+      font-size: 3.5rem;
+   }
+   .data-info p{
+     line-height: 1.3rem;
+   }
+   .aveEst{
+      flex-direction: column;     
+   }
+   .aveEst div{
+      margin-bottom: 15px;
+   
+    }
+      
+   } 
+
+
+   @media only screen and (max-width: 450px) and (max-height: 740px){
+      
+      .dataContainer{
+         margin-top: 10px;
+         
+      }
+        
+      .aveEst{
+         width: 70%;
+         flex-direction: row;
+        
+      }
+      .aveEst div{
+        margin-right: 0;
+      }
+      .aveEst div h3{
+        font-size: 1.2rem;
+      }
+      .aveEst div h6{ 
+        padding: 0px;
+        font-size: 0.4rem;
+     
+      }
+  
+  }

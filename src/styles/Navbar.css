@@ -1,0 +1,198 @@
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 20px;
+  }
+  
+  .navbar .leftside{
+    flex: 40%;
+    margin-left: 1.5rem;
+  }
+  
+  .navbar .rightside{
+    flex: 60%;
+    width: 100%;
+    background-color:rgba(241, 236, 236, 0.075);
+  }
+  
+  .navbar .rightside .links{
+    display: flex;
+    margin-left: 3rem;
+  }
+  .navbar .rightside .links .llll{
+   color: rgba(255, 255, 255, 0.781);
+   text-decoration: none;
+   padding: 1.5rem 0rem;
+   border-bottom: 0.15rem solid transparent ;
+   margin: 0 1vw;
+   cursor: pointer;
+   font-size: calc(0.3rem + 1vw);
+  }
+  .navbar .rightside .links .llll:hover{
+   color: white;
+      border-bottom: 0.15rem solid white;
+
+  }
+  .active-link{
+       border-bottom: 0.15rem solid white;
+
+  }
+  .navbar .rightside .links .llll span{
+    margin-right: 0.4rem;
+    font-weight: bolder;
+    color: white;
+  } 
+  
+
+
+  .navbar button{
+    margin: 20px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      display: none;
+      cursor: pointer;
+  }
+  .navbar button .menubtn{
+    font-size: 1.7rem;
+    color: white;
+    animation: bounce 2s ease-in-out infinite;
+
+  }
+
+  @keyframes bounce {
+    0%{
+        transform: scale(0.7);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.7);
+    }
+}
+
+  #open{
+    transform: translate(0);
+  }
+  #close{
+    transform: translate(100%);
+  }
+  .hiddenLinks{
+    display: flex;
+    flex-direction: column; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    display: none;
+    transition: transform .2s linear;
+  }
+
+  .hiddenLinks .cancel{
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+   }
+   .hiddenLinks button{
+    font-size: 1.4rem;
+    padding-top: 5px;
+    color: white;
+    font-weight: bolder;
+    animation: spin 1s linear infinite;
+    cursor: pointer;
+   }
+
+   @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+   .hiddenLinks .llll{
+     color: rgba(255, 255, 255, 0.767);
+     text-decoration: none;
+     margin: 0.5rem 1vw;
+     padding: 0.5rem ;
+     cursor: pointer;
+     font-size: calc(0.5rem + 1vw);
+   }
+   .hiddenLinks .llll:hover{
+    background-color: rgb(105, 102, 102);
+   }
+   .hiddenLinks .llll span{
+     margin-right: 0.7rem;
+     font-weight: bolder;
+     color: white;
+    }
+
+
+
+  @media only screen and (max-width: 850px){
+    .navbar{
+      top: 0px;
+    }
+    .leftside .logo{
+      width: 2.5rem;
+    }
+    .navbar .rightside .links .llll{
+      margin: 0 2vw;
+     }
+    
+    .navbar .rightside .links .llll span{
+      display: none;
+    } 
+  }
+
+
+
+
+  @media only screen and (max-width: 450px){
+    .navbar{
+      justify-content: space-between;
+    }
+    .navbar .leftside{
+      flex: 0;
+      margin-left: 0px;
+      margin: 20px;
+    }
+    .leftside .logo{
+      width: 1.7rem;
+    }
+
+    .navbar .rightside{
+      display: none;
+    }
+   
+    .navbar button{
+        display: inherit;
+    }
+
+    .hiddenLinks{
+      display: inherit;
+      
+     
+    }
+
+  
+
+    
+  }
+
+ 
+
+
